@@ -1,9 +1,12 @@
-
- const App = () => {
+import { BrowserRouter as Router } from "react-router-dom";
+import SideBar from "./components/SideBar";
+const App = () => {
   return (
-    <div>
-      <h1 className="tex-3xl bg-red-300 ">Welcome to React E-commerce with TypeScript</h1>
-    </div>
-  )
-}
- export default App
+    <Router>
+      <div className="flex h-screen">
+        <SideBar />
+      </div>
+    </Router>
+  );
+};
+export default App;
