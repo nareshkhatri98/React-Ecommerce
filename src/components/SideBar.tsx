@@ -37,7 +37,7 @@ const SideBar = () => {
       try {
         const response = await fetch("https://dummyjson.com/products/");
         const data: fetchResponse = await response.json();
-        console.log(data);
+        // console.log(data);
         const uniqueCategories = Array.from(
           new Set(data.products.map((product) => product.category))
         );
