@@ -15,6 +15,7 @@ const TopSeller = () => {
         const response = await fetch("https://randomuser.me/api/?results=5");
         const data = await response.json();
 
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const authorData: Author[] = data.results.map((user:any) => ({
           name: `${user.name.first} ${user.name.last}`,
           isFollowing: false, 

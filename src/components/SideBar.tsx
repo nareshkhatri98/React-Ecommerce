@@ -93,7 +93,7 @@ const handleResetFilters = () => {
           onChange={(e) => setSearchQuery(e.target.value)}
         />
 
-        <div className="flex justify-center gap-2 item-center mt-2 w-full">
+        <div className="flex justify-center gap-2 item-center mt-3 w-full">
           <input
             type="text"
             className="border-2  rounded px-5 py-1 w-full "

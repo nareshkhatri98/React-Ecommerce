@@ -8,6 +8,7 @@ const MainContent = () => {
   const { selectedCategory, searchQuery, keyWord, minPrice, maxPrice } =
     useFilter();
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [products, setProducts] = useState<any[]>([]);
   const [filter, setFilter] = useState("all");
   const [currentPage, setCurrentPage] = useState(1);
